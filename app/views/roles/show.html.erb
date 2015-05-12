@@ -7,9 +7,9 @@
   <dd><%= @role.character_name %></dd>
 
   <dt>Movie ID</dt>
-  <dd><%= @role.movie_id %></dd>
+  <dd><%= Movie.find(@role.movie_id).title %></dd>
 
   <dt>Actor ID</dt>
-  <dd><%= @role.actor_id %></dd>
+  <dd><%= Actor.find(@role.actor_id).name %></dd>
 
 </dl>
